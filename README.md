@@ -1,5 +1,5 @@
 # Mail content parsing
-邮件内容解析
+Mail content parsing
 
 ## Simple usage
 
@@ -55,6 +55,6 @@ for _, a := range(email.EmbeddedFiles) {
 ```
 
 
-# 参考
+# Reference resources
 - https://github.com/DusanKasan/Parsemail
 - https://github.com/emersion/go-imap
