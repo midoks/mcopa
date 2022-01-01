@@ -7,7 +7,7 @@ You just parse a io.Reader that holds the email data. The returned Email struct 
 
 ```go
 var reader io.Reader // this reads an email message
-email, err := parsemail.Parse(reader) // returns Email struct and error
+email, err := mcopa.Parse(reader) // returns Email struct and error
 if err != nil {
     // handle error
 }
@@ -24,7 +24,7 @@ Attachments are a easily accessible as `Attachment` type, containing their mime 
 
 ```go
 var reader io.Reader
-email, err := parsemail.Parse(reader)
+email, err := mcopa.Parse(reader)
 if err != nil {
     // handle error
 }
@@ -42,7 +42,7 @@ You can access embedded files in the same way you can access attachments. They c
 
 ```go
 var reader io.Reader
-email, err := parsemail.Parse(reader)
+email, err := mcopa.Parse(reader)
 if err != nil {
     // handle error
 }
