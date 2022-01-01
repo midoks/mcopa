@@ -108,6 +108,7 @@ func createEmailFromHeader(header mail.Header) (email Email, err error) {
 	email.Cc = hp.parseAddressList(header.Get("Cc"))
 	email.Bcc = hp.parseAddressList(header.Get("Bcc"))
 	email.Date = hp.parseTime(header.Get("Date"))
+	email.MessageID = hp.parseMessageId(header.Get("Message-ID"))
 
 	if hp.err != nil {
 		err = hp.err
